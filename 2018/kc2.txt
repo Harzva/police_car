@@ -1,0 +1,42 @@
+%exam6
+clc
+clear all
+x=-5:0.1:5;
+y=sin(x./(1+x.^2))+cos(x);
+plot(x,y)
+
+% exam3
+clc
+clear all
+A=[1 5 -7 8;5 15 6  -5]
+[m,n]=size(A)
+
+max_A=A(1,1);
+for i=1:m
+    for j=1:n
+        if max_A<A(i,j)
+            max_A=A(i,j);
+        end
+    end
+end
+
+max_A
+
+clc
+clear all
+a=rand(1)
+b=rand(1)
+c=rand(1)
+
+if a>b
+    d=a;
+else
+    d=b;
+end
+
+if d>c
+    max_abc=d;
+else
+    max_abc=c;
+end
+
